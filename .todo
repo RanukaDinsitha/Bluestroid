@@ -1,2 +1,5 @@
-Fix Sprite Fire Error
-Make gravity a bit better
+Read https://www.pygame.org/docs/ref/font.html#pygame.font.Font
+Add score system
+Add font
+And code the rotation with movment system 
+And make enemy ships
