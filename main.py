@@ -1,5 +1,6 @@
 import pygame
 from os.path import join as path
+import math
 
 # Initialize Pygame
 pygame.init()
@@ -28,22 +29,22 @@ friction = 0.99
 thrust = 0.5
 velocity = pygame.Vector2(0, 0)
 
-# Hover effect parameters
-hover_effect_intensity = 15
+# Turning parameters
 angle = 0
+turn_speed = 5  # Speed of rotation
+rotation_speed = 5  # Rotation speed for smooth turning
 
 def rotate_image(image, angle):
     """Rotate the image while keeping its center and size."""
     rotated_image = pygame.transform.rotate(image, angle)
-    rotated_rect = rotated_image.get_rect(center=image.get_rect(center=(player_rect.x, player_rect.y)).center)
+    rotated_rect = rotated_image.get_rect(center=player_rect.center)
     return rotated_image, rotated_rect
 
-def draw_glow(surface, image, position, glow_color=(255, 255, 0)):
-    """Draw a glow effect around the image."""
-    glow_surface = pygame.Surface((image.get_width() + hover_effect_intensity * 2, image.get_height() + hover_effect_intensity * 2), pygame.SRCALPHA)
-    pygame.draw.ellipse(glow_surface, glow_color + (128,), glow_surface.get_rect(), width=0)
-    glow_surface.blit(image, (hover_effect_intensity, hover_effect_intensity), special_flags=pygame.BLEND_RGBA_ADD)
-    surface.blit(glow_surface, (position[0] - hover_effect_intensity, position[1] - hover_effect_intensity))
+def draw_fire_effect(surface, image, positions):
+    """Draw fire effects at the specified positions."""
+    for pos in positions:
+        fire_rect = image.get_rect(center=pos)
+        surface.blit(image, fire_rect.topleft)
 
 # Main loop
 running = True
@@ -57,17 +58,15 @@ while running:
     # Key presses
     keys = pygame.key.get_pressed()
     if keys[pygame.K_LEFT]:
+        angle += rotation_speed
         velocity.x -= thrust
-        angle += 10  # Faster rotation
     if keys[pygame.K_RIGHT]:
+        angle -= rotation_speed
         velocity.x += thrust
-        angle -= 10  # Faster rotation
-    if keys[pygame.K_UP]:
+    if keys[pygame.K_UP] or keys[pygame.K_w]:
         velocity.y -= thrust
     if keys[pygame.K_DOWN]:
         velocity.y += thrust
-    if keys[pygame.K_w]:
-        velocity.y -= thrust
     if keys[pygame.K_a]:
         velocity.x -= thrust
     if keys[pygame.K_s]:
@@ -85,6 +84,16 @@ while running:
     player_rect.x += int(velocity.x)
     player_rect.y += int(velocity.y)
 
+    # Keep the player within the screen boundaries
+    if player_rect.left < 0:
+        player_rect.left = 0
+    if player_rect.right > screen_size[0]:
+        player_rect.right = screen_size[0]
+    if player_rect.top < 0:
+        player_rect.top = 0
+    if player_rect.bottom > screen_size[1]:
+        player_rect.bottom = screen_size[1]
+
     # Clear screen
     screen.blit(background_image, (0, 0))  # Draw background image
 
@@ -92,13 +101,15 @@ while running:
     rotated_image, rotated_rect = rotate_image(player_image, angle)
     screen.blit(rotated_image, rotated_rect.topleft)
 
-    # Draw fire effect
+    # Determine fire effect positions
+    fire_positions = []
     if keys[pygame.K_UP] or keys[pygame.K_w]:
-        fire_rect = fire_image.get_rect(midbottom=(player_rect.centerx, player_rect.top))
-        screen.blit(fire_image, fire_rect.topleft)
+        fire_positions.append((player_rect.centerx, player_rect.bottom))
     if keys[pygame.K_LEFT] or keys[pygame.K_RIGHT]:
-        fire_rect = fire_image.get_rect(midbottom=(player_rect.centerx, player_rect.bottom))
-        screen.blit(fire_image, fire_rect.topleft)
+        fire_positions.append((player_rect.centerx, player_rect.bottom + 10))
+
+    # Draw fire effects
+    draw_fire_effect(screen, fire_image, fire_positions)
 
     # Update display
     pygame.display.flip()
