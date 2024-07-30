@@ -1,4 +1,4 @@
-# Bluestroid
+# Bluestroid ☄️
 
 ![Pygame Badge](./pygame_powered.gif)
 
