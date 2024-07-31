@@ -1,6 +1,6 @@
 import pygame
 from os.path import join as path
-from components.font import data, fontIs
+from components.debug import *
  
 # Initialize Pygame & Font
 pygame.init()
@@ -9,6 +9,7 @@ pygame.font.init()
 # Setup
 screen_size = (600, 700)
 title = 'Bluestroid'
+debugMode = False
 screen = pygame.display.set_mode(screen_size)
 pygame.display.set_caption(title)
 icon = pygame.image.load(path(".", "assets", "icon.png"))
@@ -19,8 +20,14 @@ player_image = pygame.image.load(path(".", "assets", "game", "PNG", "playerShip1
 fire_image = pygame.image.load(path(".", "assets", "game", "PNG", "Effects", "fire01.png"))
 background_image = pygame.image.load(path(".", "assets", "game", "Backgrounds", "blue.png"))
 print(f"{title} ☄️")
-print(f"SDL TTF Loader Version: {data}")
-print(f"Default Font is {fontIs}\n")
+print("-----------------------------------------\n")
+
+# Debug If Loop
+
+if debugMode == True:
+    print(f"{title} Debug Mode has been Activated☄️\n")
+    print(f"")
+    
 
 # Resize background image to fit the screen
 background_image = pygame.transform.scale(background_image, screen_size)
