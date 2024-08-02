@@ -1,0 +1,345 @@
+┣ 📂__pycache__
+┃ ┗ 📜font.cpython-312.pyc
+┣ 📂assets
+┃ ┣ 📂game
+┃ ┃ ┣ 📂Backgrounds
+┃ ┃ ┃ ┣ 📜black.png
+┃ ┃ ┃ ┣ 📜blue.png
+┃ ┃ ┃ ┣ 📜darkPurple.png
+┃ ┃ ┃ ┗ 📜purple.png
+┃ ┃ ┣ 📂Bonus
+┃ ┃ ┃ ┣ 📜kenvector_future_thin.ttf
+┃ ┃ ┃ ┣ 📜kenvector_future.ttf
+┃ ┃ ┃ ┣ 📜sfx_laser1.ogg
+┃ ┃ ┃ ┣ 📜sfx_laser2.ogg
+┃ ┃ ┃ ┣ 📜sfx_lose.ogg
+┃ ┃ ┃ ┣ 📜sfx_shieldDown.ogg
+┃ ┃ ┃ ┣ 📜sfx_shieldUp.ogg
+┃ ┃ ┃ ┣ 📜sfx_twoTone.ogg
+┃ ┃ ┃ ┗ 📜sfx_zap.ogg
+┃ ┃ ┣ 📂PNG
+┃ ┃ ┃ ┣ 📂Damage
+┃ ┃ ┃ ┃ ┣ 📜playerShip1_damage1.png
+┃ ┃ ┃ ┃ ┣ 📜playerShip1_damage2.png
+┃ ┃ ┃ ┃ ┣ 📜playerShip1_damage3.png
+┃ ┃ ┃ ┃ ┣ 📜playerShip2_damage1.png
+┃ ┃ ┃ ┃ ┣ 📜playerShip2_damage2.png
+┃ ┃ ┃ ┃ ┣ 📜playerShip2_damage3.png
+┃ ┃ ┃ ┃ ┣ 📜playerShip3_damage1.png
+┃ ┃ ┃ ┃ ┣ 📜playerShip3_damage2.png
+┃ ┃ ┃ ┃ ┗ 📜playerShip3_damage3.png
+┃ ┃ ┃ ┣ 📂Effects
+┃ ┃ ┃ ┃ ┣ 📜fire00.png
+┃ ┃ ┃ ┃ ┣ 📜fire01.png
+┃ ┃ ┃ ┃ ┣ 📜fire02.png
+┃ ┃ ┃ ┃ ┣ 📜fire03.png
+┃ ┃ ┃ ┃ ┣ 📜fire04.png
+┃ ┃ ┃ ┃ ┣ 📜fire05.png
+┃ ┃ ┃ ┃ ┣ 📜fire06.png
+┃ ┃ ┃ ┃ ┣ 📜fire07.png
+┃ ┃ ┃ ┃ ┣ 📜fire08.png
+┃ ┃ ┃ ┃ ┣ 📜fire09.png
+┃ ┃ ┃ ┃ ┣ 📜fire10.png
+┃ ┃ ┃ ┃ ┣ 📜fire11.png
+┃ ┃ ┃ ┃ ┣ 📜fire12.png
+┃ ┃ ┃ ┃ ┣ 📜fire13.png
+┃ ┃ ┃ ┃ ┣ 📜fire14.png
+┃ ┃ ┃ ┃ ┣ 📜fire15.png
+┃ ┃ ┃ ┃ ┣ 📜fire16.png
+┃ ┃ ┃ ┃ ┣ 📜fire17.png
+┃ ┃ ┃ ┃ ┣ 📜fire18.png
+┃ ┃ ┃ ┃ ┣ 📜fire19.png
+┃ ┃ ┃ ┃ ┣ 📜shield1.png
+┃ ┃ ┃ ┃ ┣ 📜shield2.png
+┃ ┃ ┃ ┃ ┣ 📜shield3.png
+┃ ┃ ┃ ┃ ┣ 📜speed.png
+┃ ┃ ┃ ┃ ┣ 📜star1.png
+┃ ┃ ┃ ┃ ┣ 📜star2.png
+┃ ┃ ┃ ┃ ┗ 📜star3.png
+┃ ┃ ┃ ┣ 📂Enemies
+┃ ┃ ┃ ┃ ┣ 📜enemyBlack1.png
+┃ ┃ ┃ ┃ ┣ 📜enemyBlack2.png
+┃ ┃ ┃ ┃ ┣ 📜enemyBlack3.png
+┃ ┃ ┃ ┃ ┣ 📜enemyBlack4.png
+┃ ┃ ┃ ┃ ┣ 📜enemyBlack5.png
+┃ ┃ ┃ ┃ ┣ 📜enemyBlue1.png
+┃ ┃ ┃ ┃ ┣ 📜enemyBlue2.png
+┃ ┃ ┃ ┃ ┣ 📜enemyBlue3.png
+┃ ┃ ┃ ┃ ┣ 📜enemyBlue4.png
+┃ ┃ ┃ ┃ ┣ 📜enemyBlue5.png
+┃ ┃ ┃ ┃ ┣ 📜enemyGreen1.png
+┃ ┃ ┃ ┃ ┣ 📜enemyGreen2.png
+┃ ┃ ┃ ┃ ┣ 📜enemyGreen3.png
+┃ ┃ ┃ ┃ ┣ 📜enemyGreen4.png
+┃ ┃ ┃ ┃ ┣ 📜enemyGreen5.png
+┃ ┃ ┃ ┃ ┣ 📜enemyRed1.png
+┃ ┃ ┃ ┃ ┣ 📜enemyRed2.png
+┃ ┃ ┃ ┃ ┣ 📜enemyRed3.png
+┃ ┃ ┃ ┃ ┣ 📜enemyRed4.png
+┃ ┃ ┃ ┃ ┗ 📜enemyRed5.png
+┃ ┃ ┃ ┣ 📂Lasers
+┃ ┃ ┃ ┃ ┣ 📜laserBlue01.png
+┃ ┃ ┃ ┃ ┣ 📜laserBlue02.png
+┃ ┃ ┃ ┃ ┣ 📜laserBlue03.png
+┃ ┃ ┃ ┃ ┣ 📜laserBlue04.png
+┃ ┃ ┃ ┃ ┣ 📜laserBlue05.png
+┃ ┃ ┃ ┃ ┣ 📜laserBlue06.png
+┃ ┃ ┃ ┃ ┣ 📜laserBlue07.png
+┃ ┃ ┃ ┃ ┣ 📜laserBlue08.png
+┃ ┃ ┃ ┃ ┣ 📜laserBlue09.png
+┃ ┃ ┃ ┃ ┣ 📜laserBlue10.png
+┃ ┃ ┃ ┃ ┣ 📜laserBlue11.png
+┃ ┃ ┃ ┃ ┣ 📜laserBlue12.png
+┃ ┃ ┃ ┃ ┣ 📜laserBlue13.png
+┃ ┃ ┃ ┃ ┣ 📜laserBlue14.png
+┃ ┃ ┃ ┃ ┣ 📜laserBlue15.png
+┃ ┃ ┃ ┃ ┣ 📜laserBlue16.png
+┃ ┃ ┃ ┃ ┣ 📜laserGreen01.png
+┃ ┃ ┃ ┃ ┣ 📜laserGreen02.png
+┃ ┃ ┃ ┃ ┣ 📜laserGreen03.png
+┃ ┃ ┃ ┃ ┣ 📜laserGreen04.png
+┃ ┃ ┃ ┃ ┣ 📜laserGreen05.png
+┃ ┃ ┃ ┃ ┣ 📜laserGreen06.png
+┃ ┃ ┃ ┃ ┣ 📜laserGreen07.png
+┃ ┃ ┃ ┃ ┣ 📜laserGreen08.png
+┃ ┃ ┃ ┃ ┣ 📜laserGreen09.png
+┃ ┃ ┃ ┃ ┣ 📜laserGreen10.png
+┃ ┃ ┃ ┃ ┣ 📜laserGreen11.png
+┃ ┃ ┃ ┃ ┣ 📜laserGreen12.png
+┃ ┃ ┃ ┃ ┣ 📜laserGreen13.png
+┃ ┃ ┃ ┃ ┣ 📜laserGreen14.png
+┃ ┃ ┃ ┃ ┣ 📜laserGreen15.png
+┃ ┃ ┃ ┃ ┣ 📜laserGreen16.png
+┃ ┃ ┃ ┃ ┣ 📜laserRed01.png
+┃ ┃ ┃ ┃ ┣ 📜laserRed02.png
+┃ ┃ ┃ ┃ ┣ 📜laserRed03.png
+┃ ┃ ┃ ┃ ┣ 📜laserRed04.png
+┃ ┃ ┃ ┃ ┣ 📜laserRed05.png
+┃ ┃ ┃ ┃ ┣ 📜laserRed06.png
+┃ ┃ ┃ ┃ ┣ 📜laserRed07.png
+┃ ┃ ┃ ┃ ┣ 📜laserRed08.png
+┃ ┃ ┃ ┃ ┣ 📜laserRed09.png
+┃ ┃ ┃ ┃ ┣ 📜laserRed10.png
+┃ ┃ ┃ ┃ ┣ 📜laserRed11.png
+┃ ┃ ┃ ┃ ┣ 📜laserRed12.png
+┃ ┃ ┃ ┃ ┣ 📜laserRed13.png
+┃ ┃ ┃ ┃ ┣ 📜laserRed14.png
+┃ ┃ ┃ ┃ ┣ 📜laserRed15.png
+┃ ┃ ┃ ┃ ┗ 📜laserRed16.png
+┃ ┃ ┃ ┣ 📂Meteors
+┃ ┃ ┃ ┃ ┣ 📜meteorBrown_big1.png
+┃ ┃ ┃ ┃ ┣ 📜meteorBrown_big2.png
+┃ ┃ ┃ ┃ ┣ 📜meteorBrown_big3.png
+┃ ┃ ┃ ┃ ┣ 📜meteorBrown_big4.png
+┃ ┃ ┃ ┃ ┣ 📜meteorBrown_med1.png
+┃ ┃ ┃ ┃ ┣ 📜meteorBrown_med3.png
+┃ ┃ ┃ ┃ ┣ 📜meteorBrown_small1.png
+┃ ┃ ┃ ┃ ┣ 📜meteorBrown_small2.png
+┃ ┃ ┃ ┃ ┣ 📜meteorBrown_tiny1.png
+┃ ┃ ┃ ┃ ┣ 📜meteorBrown_tiny2.png
+┃ ┃ ┃ ┃ ┣ 📜meteorGrey_big1.png
+┃ ┃ ┃ ┃ ┣ 📜meteorGrey_big2.png
+┃ ┃ ┃ ┃ ┣ 📜meteorGrey_big3.png
+┃ ┃ ┃ ┃ ┣ 📜meteorGrey_big4.png
+┃ ┃ ┃ ┃ ┣ 📜meteorGrey_med1.png
+┃ ┃ ┃ ┃ ┣ 📜meteorGrey_med2.png
+┃ ┃ ┃ ┃ ┣ 📜meteorGrey_small1.png
+┃ ┃ ┃ ┃ ┣ 📜meteorGrey_small2.png
+┃ ┃ ┃ ┃ ┣ 📜meteorGrey_tiny1.png
+┃ ┃ ┃ ┃ ┗ 📜meteorGrey_tiny2.png
+┃ ┃ ┃ ┣ 📂Parts
+┃ ┃ ┃ ┃ ┣ 📜beam0.png
+┃ ┃ ┃ ┃ ┣ 📜beam1.png
+┃ ┃ ┃ ┃ ┣ 📜beam2.png
+┃ ┃ ┃ ┃ ┣ 📜beam3.png
+┃ ┃ ┃ ┃ ┣ 📜beam4.png
+┃ ┃ ┃ ┃ ┣ 📜beam5.png
+┃ ┃ ┃ ┃ ┣ 📜beam6.png
+┃ ┃ ┃ ┃ ┣ 📜beamLong1.png
+┃ ┃ ┃ ┃ ┣ 📜beamLong2.png
+┃ ┃ ┃ ┃ ┣ 📜cockpitBlue_0.png
+┃ ┃ ┃ ┃ ┣ 📜cockpitBlue_1.png
+┃ ┃ ┃ ┃ ┣ 📜cockpitBlue_2.png
+┃ ┃ ┃ ┃ ┣ 📜cockpitBlue_3.png
+┃ ┃ ┃ ┃ ┣ 📜cockpitBlue_4.png
+┃ ┃ ┃ ┃ ┣ 📜cockpitBlue_5.png
+┃ ┃ ┃ ┃ ┣ 📜cockpitBlue_6.png
+┃ ┃ ┃ ┃ ┣ 📜cockpitBlue_7.png
+┃ ┃ ┃ ┃ ┣ 📜cockpitGreen_0.png
+┃ ┃ ┃ ┃ ┣ 📜cockpitGreen_1.png
+┃ ┃ ┃ ┃ ┣ 📜cockpitGreen_2.png
+┃ ┃ ┃ ┃ ┣ 📜cockpitGreen_3.png
+┃ ┃ ┃ ┃ ┣ 📜cockpitGreen_4.png
+┃ ┃ ┃ ┃ ┣ 📜cockpitGreen_5.png
+┃ ┃ ┃ ┃ ┣ 📜cockpitGreen_6.png
+┃ ┃ ┃ ┃ ┣ 📜cockpitGreen_7.png
+┃ ┃ ┃ ┃ ┣ 📜cockpitRed_0.png
+┃ ┃ ┃ ┃ ┣ 📜cockpitRed_1.png
+┃ ┃ ┃ ┃ ┣ 📜cockpitRed_2.png
+┃ ┃ ┃ ┃ ┣ 📜cockpitRed_3.png
+┃ ┃ ┃ ┃ ┣ 📜cockpitRed_4.png
+┃ ┃ ┃ ┃ ┣ 📜cockpitRed_5.png
+┃ ┃ ┃ ┃ ┣ 📜cockpitRed_6.png
+┃ ┃ ┃ ┃ ┣ 📜cockpitRed_7.png
+┃ ┃ ┃ ┃ ┣ 📜cockpitYellow_0.png
+┃ ┃ ┃ ┃ ┣ 📜cockpitYellow_1.png
+┃ ┃ ┃ ┃ ┣ 📜cockpitYellow_2.png
+┃ ┃ ┃ ┃ ┣ 📜cockpitYellow_3.png
+┃ ┃ ┃ ┃ ┣ 📜cockpitYellow_4.png
+┃ ┃ ┃ ┃ ┣ 📜cockpitYellow_5.png
+┃ ┃ ┃ ┃ ┣ 📜cockpitYellow_6.png
+┃ ┃ ┃ ┃ ┣ 📜cockpitYellow_7.png
+┃ ┃ ┃ ┃ ┣ 📜engine1.png
+┃ ┃ ┃ ┃ ┣ 📜engine2.png
+┃ ┃ ┃ ┃ ┣ 📜engine3.png
+┃ ┃ ┃ ┃ ┣ 📜engine4.png
+┃ ┃ ┃ ┃ ┣ 📜engine5.png
+┃ ┃ ┃ ┃ ┣ 📜gun00.png
+┃ ┃ ┃ ┃ ┣ 📜gun01.png
+┃ ┃ ┃ ┃ ┣ 📜gun02.png
+┃ ┃ ┃ ┃ ┣ 📜gun03.png
+┃ ┃ ┃ ┃ ┣ 📜gun04.png
+┃ ┃ ┃ ┃ ┣ 📜gun05.png
+┃ ┃ ┃ ┃ ┣ 📜gun06.png
+┃ ┃ ┃ ┃ ┣ 📜gun07.png
+┃ ┃ ┃ ┃ ┣ 📜gun08.png
+┃ ┃ ┃ ┃ ┣ 📜gun09.png
+┃ ┃ ┃ ┃ ┣ 📜gun10.png
+┃ ┃ ┃ ┃ ┣ 📜scratch1.png
+┃ ┃ ┃ ┃ ┣ 📜scratch2.png
+┃ ┃ ┃ ┃ ┣ 📜scratch3.png
+┃ ┃ ┃ ┃ ┣ 📜turretBase_big.png
+┃ ┃ ┃ ┃ ┣ 📜turretBase_small.png
+┃ ┃ ┃ ┃ ┣ 📜wingBlue_0.png
+┃ ┃ ┃ ┃ ┣ 📜wingBlue_1.png
+┃ ┃ ┃ ┃ ┣ 📜wingBlue_2.png
+┃ ┃ ┃ ┃ ┣ 📜wingBlue_3.png
+┃ ┃ ┃ ┃ ┣ 📜wingBlue_4.png
+┃ ┃ ┃ ┃ ┣ 📜wingBlue_5.png
+┃ ┃ ┃ ┃ ┣ 📜wingBlue_6.png
+┃ ┃ ┃ ┃ ┣ 📜wingBlue_7.png
+┃ ┃ ┃ ┃ ┣ 📜wingGreen_0.png
+┃ ┃ ┃ ┃ ┣ 📜wingGreen_1.png
+┃ ┃ ┃ ┃ ┣ 📜wingGreen_2.png
+┃ ┃ ┃ ┃ ┣ 📜wingGreen_3.png
+┃ ┃ ┃ ┃ ┣ 📜wingGreen_4.png
+┃ ┃ ┃ ┃ ┣ 📜wingGreen_5.png
+┃ ┃ ┃ ┃ ┣ 📜wingGreen_6.png
+┃ ┃ ┃ ┃ ┣ 📜wingGreen_7.png
+┃ ┃ ┃ ┃ ┣ 📜wingRed_0.png
+┃ ┃ ┃ ┃ ┣ 📜wingRed_1.png
+┃ ┃ ┃ ┃ ┣ 📜wingRed_2.png
+┃ ┃ ┃ ┃ ┣ 📜wingRed_3.png
+┃ ┃ ┃ ┃ ┣ 📜wingRed_4.png
+┃ ┃ ┃ ┃ ┣ 📜wingRed_5.png
+┃ ┃ ┃ ┃ ┣ 📜wingRed_6.png
+┃ ┃ ┃ ┃ ┣ 📜wingRed_7.png
+┃ ┃ ┃ ┃ ┣ 📜wingYellow_0.png
+┃ ┃ ┃ ┃ ┣ 📜wingYellow_1.png
+┃ ┃ ┃ ┃ ┣ 📜wingYellow_2.png
+┃ ┃ ┃ ┃ ┣ 📜wingYellow_3.png
+┃ ┃ ┃ ┃ ┣ 📜wingYellow_4.png
+┃ ┃ ┃ ┃ ┣ 📜wingYellow_5.png
+┃ ┃ ┃ ┃ ┣ 📜wingYellow_6.png
+┃ ┃ ┃ ┃ ┗ 📜wingYellow_7.png
+┃ ┃ ┃ ┣ 📂Power-ups
+┃ ┃ ┃ ┃ ┣ 📜bold_silver.png
+┃ ┃ ┃ ┃ ┣ 📜bolt_bronze.png
+┃ ┃ ┃ ┃ ┣ 📜bolt_gold.png
+┃ ┃ ┃ ┃ ┣ 📜pill_blue.png
+┃ ┃ ┃ ┃ ┣ 📜pill_green.png
+┃ ┃ ┃ ┃ ┣ 📜pill_red.png
+┃ ┃ ┃ ┃ ┣ 📜pill_yellow.png
+┃ ┃ ┃ ┃ ┣ 📜powerupBlue_bolt.png
+┃ ┃ ┃ ┃ ┣ 📜powerupBlue_shield.png
+┃ ┃ ┃ ┃ ┣ 📜powerupBlue_star.png
+┃ ┃ ┃ ┃ ┣ 📜powerupBlue.png
+┃ ┃ ┃ ┃ ┣ 📜powerupGreen_bolt.png
+┃ ┃ ┃ ┃ ┣ 📜powerupGreen_shield.png
+┃ ┃ ┃ ┃ ┣ 📜powerupGreen_star.png
+┃ ┃ ┃ ┃ ┣ 📜powerupGreen.png
+┃ ┃ ┃ ┃ ┣ 📜powerupRed_bolt.png
+┃ ┃ ┃ ┃ ┣ 📜powerupRed_shield.png
+┃ ┃ ┃ ┃ ┣ 📜powerupRed_star.png
+┃ ┃ ┃ ┃ ┣ 📜powerupRed.png
+┃ ┃ ┃ ┃ ┣ 📜powerupYellow_bolt.png
+┃ ┃ ┃ ┃ ┣ 📜powerupYellow_shield.png
+┃ ┃ ┃ ┃ ┣ 📜powerupYellow_star.png
+┃ ┃ ┃ ┃ ┣ 📜powerupYellow.png
+┃ ┃ ┃ ┃ ┣ 📜shield_bronze.png
+┃ ┃ ┃ ┃ ┣ 📜shield_gold.png
+┃ ┃ ┃ ┃ ┣ 📜shield_silver.png
+┃ ┃ ┃ ┃ ┣ 📜star_bronze.png
+┃ ┃ ┃ ┃ ┣ 📜star_gold.png
+┃ ┃ ┃ ┃ ┣ 📜star_silver.png
+┃ ┃ ┃ ┃ ┣ 📜things_bronze.png
+┃ ┃ ┃ ┃ ┣ 📜things_gold.png
+┃ ┃ ┃ ┃ ┗ 📜things_silver.png
+┃ ┃ ┃ ┣ 📂UI
+┃ ┃ ┃ ┃ ┣ 📜buttonBlue.png
+┃ ┃ ┃ ┃ ┣ 📜buttonGreen.png
+┃ ┃ ┃ ┃ ┣ 📜buttonRed.png
+┃ ┃ ┃ ┃ ┣ 📜buttonYellow.png
+┃ ┃ ┃ ┃ ┣ 📜cursor.png
+┃ ┃ ┃ ┃ ┣ 📜numeral0.png
+┃ ┃ ┃ ┃ ┣ 📜numeral1.png
+┃ ┃ ┃ ┃ ┣ 📜numeral2.png
+┃ ┃ ┃ ┃ ┣ 📜numeral3.png
+┃ ┃ ┃ ┃ ┣ 📜numeral4.png
+┃ ┃ ┃ ┃ ┣ 📜numeral5.png
+┃ ┃ ┃ ┃ ┣ 📜numeral6.png
+┃ ┃ ┃ ┃ ┣ 📜numeral7.png
+┃ ┃ ┃ ┃ ┣ 📜numeral8.png
+┃ ┃ ┃ ┃ ┣ 📜numeral9.png
+┃ ┃ ┃ ┃ ┣ 📜numeralX.png
+┃ ┃ ┃ ┃ ┣ 📜playerLife1_blue.png
+┃ ┃ ┃ ┃ ┣ 📜playerLife1_green.png
+┃ ┃ ┃ ┃ ┣ 📜playerLife1_orange.png
+┃ ┃ ┃ ┃ ┣ 📜playerLife1_red.png
+┃ ┃ ┃ ┃ ┣ 📜playerLife2_blue.png
+┃ ┃ ┃ ┃ ┣ 📜playerLife2_green.png
+┃ ┃ ┃ ┃ ┣ 📜playerLife2_orange.png
+┃ ┃ ┃ ┃ ┣ 📜playerLife2_red.png
+┃ ┃ ┃ ┃ ┣ 📜playerLife3_blue.png
+┃ ┃ ┃ ┃ ┣ 📜playerLife3_green.png
+┃ ┃ ┃ ┃ ┣ 📜playerLife3_orange.png
+┃ ┃ ┃ ┃ ┗ 📜playerLife3_red.png
+┃ ┃ ┃ ┣ 📜playerShip1_blue.png
+┃ ┃ ┃ ┣ 📜playerShip1_green.png
+┃ ┃ ┃ ┣ 📜playerShip1_orange.png
+┃ ┃ ┃ ┣ 📜playerShip1_red.png
+┃ ┃ ┃ ┣ 📜playerShip2_blue.png
+┃ ┃ ┃ ┣ 📜playerShip2_green.png
+┃ ┃ ┃ ┣ 📜playerShip2_orange.png
+┃ ┃ ┃ ┣ 📜playerShip2_red.png
+┃ ┃ ┃ ┣ 📜playerShip3_blue.png
+┃ ┃ ┃ ┣ 📜playerShip3_green.png
+┃ ┃ ┃ ┣ 📜playerShip3_orange.png
+┃ ┃ ┃ ┣ 📜playerShip3_red.png
+┃ ┃ ┃ ┣ 📜ufoBlue.png
+┃ ┃ ┃ ┣ 📜ufoGreen.png
+┃ ┃ ┃ ┣ 📜ufoRed.png
+┃ ┃ ┃ ┗ 📜ufoYellow.png
+┃ ┃ ┣ 📂Spritesheet
+┃ ┃ ┃ ┣ 📜sheet.png
+┃ ┃ ┃ ┗ 📜sheet.xml
+┃ ┃ ┣ 📂Vector
+┃ ┃ ┃ ┣ 📜sheet.svg
+┃ ┃ ┃ ┗ 📜sheet.swf
+┃ ┃ ┣ 📜license.txt
+┃ ┃ ┣ 📜preview.png
+┃ ┃ ┗ 📜sample.png
+┃ ┣ 📜icon.png
+┃ ┗ 📜pygame_powered.gif
+┣ 📂components
+┃ ┣ 📂__pycache__
+┃ ┃ ┗ 📜debug.cpython-312.pyc
+┃ ┣ 📜debug.py
+┃ ┗ 📜player.py
+┣ 📂scripts
+┃ ┗ 📜run.ps1
+┣ 📜.gitignore
+┣ 📜.todo
+┣ 📜LICENSE
+┣ 📜main.py
+┗ 📜README.md
